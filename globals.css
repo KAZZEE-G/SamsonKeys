@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --void: #000000;
+  --deep: #050505;
+  --surface: #0a0a0a;
+  --lift: #111111;
+  --border: rgba(255,255,255,0.08);
+  --border-mid: rgba(255,255,255,0.15);
+  --border-hi: rgba(255,255,255,0.28);
+  --bone: #ffffff;
+  --warm: rgba(255,255,255,0.75);
+  --muted: rgba(255,255,255,0.35);
+  --accent: #ffffff;
+  --accent-dim: rgba(255,255,255,0.06);
+  --danger: #c85050;
+  --keys-bg: #000000;
+  --keys-white: #ffffff;
+  --keys-black: #000000;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  background: var(--void);
+  color: var(--bone);
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body { min-height: 100vh; overflow-x: hidden; }
+
+.font-serif { font-family: 'Cormorant Garamond', serif; }
+
+/* Samson Keys logo mark */
+.sk-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+}
+.sk-samson {
+  color: #ffffff;
+}
+.sk-keys {
+  color: #000000;
+  background: #ffffff;
+  padding: 0 4px;
+  margin-left: 2px;
+}
